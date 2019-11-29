@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/login.css">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HighLow-Game</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper fadeInDown" id="content">
+    <div id="formContent">
+
+      <div class="gamestate">
+        <br><br>
+        <h4 id="gamestate"></h4>
+      </div>
+
+
+      <div class="setnumber" hidden>
+        <br><br>
+        <input type="text" class="fadeIn second" value="0" id="numplayer">
+        <input type="submit" class="fadeIn second" value="Submit" id="submit">
+      </div>
+
+      <div class="setplayname" hidden>
+        <br><br>
+        <h5>Current Player: <div id="plynum1"></div>
+        </h5>
+        <input type="text" class="fadeIn second" value="Enter Name" id="playername">
+        <input type="submit" class="fadeIn second" value="Submit" id="submit2">
+      </div>
+
+      <div class="setbet" hidden>
+        <br><br>
+        <p>Current Player: <div id="plynum2"></div>
+          Name: <div id="plynme2"></div>
+        </p>
+        <input type="text" class="fadeIn second" value="Set Bet-Value" id="betvalue">
+        <input type="submit" class="fadeIn third" value="High" id="submithigh">
+        <input type="submit" class="fadeIn fourth" value="Low" id="submitlow">
+      </div>
+
+      <div class="calcrew" hidden>
+        <br><br>
+        <input type="submit" class="fadeIn second" value="Calculate Rewards" id="calcrew">
+      </div>
+
+      <div class="calcrewresult" hidden>
+        <br><br>
+        <h2>Results :)</h2>
+        <p>Current Player: <div id="plyn2"></div>
+          Name: <div id="plynm2"></div>
+          Card: <div id="card"></div>
+          Current Balance: <div id="cbal"></div>
+          <br><br>
+          <input type="submit" class="fadeIn second" value="Next Turn" id="nxturn">
+      </div>
+
+      <div class="endresult" hidden>
+        <br><br>
+        <h2>Final Results :)</h2>
+        <p>Winner Player: <div id="winplyn"></div>
+          Name: <div id="winplynm"></div>
+          Current Balance: <div id="wincbal"></div>
+          <br><br>
+          <input type="submit" class="fadeIn second" value="New Game" id="newgame">
+      </div>
+
+
+      <div class="startgame">
+        <br><br>
+        <input type="submit" class="fadeIn second" value="Start Game" id="startgame">
+      </div>
+
+      <div class="rstartgame" hidden>
+        <input type="submit" class="fadeIn fourth" value="End Game" id="rstartgame">
+      </div>
+
+      <!-- Tabs Titles -->
+      <!-- <h2 class="active"> Sign In </h2> -->
+
+      <!-- Login Form -->
+      <!-- <form action="/login" method="post">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="username">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form> -->
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+
+</html>
